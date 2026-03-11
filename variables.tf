@@ -9,3 +9,10 @@ variable "instance_type" {
   type        = string
   default     = "t2.micro"
 }
+
+variable "region" {
+  description = "AWS region to deploy resources"
+  type        = string
+  default     = "us-east-2"  # you can keep your current global default
+}
+
