@@ -15,3 +15,8 @@ output "instance_subnet" {
    description = "AMI used to create the EC2 instance."
    value       = aws_instance.app_server.ami
  }
+
+ output "region" {
+  description = "Region hosting resources"
+  value       = var.region
+}
